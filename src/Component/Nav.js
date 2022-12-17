@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FcMenu, FcNext } from "react-icons/fc";
-import logo from '../img/output-onlinegiftools (1).gif'
+import logo from '../img/Rahad.gif'
 
 
 const Nav = () => {
@@ -21,8 +21,8 @@ const Nav = () => {
 
                 </button>
                 <div className='flex'>
-                    <img src={logo} alt="logo" className="w-20 ml-7" />
-                    <p className='mt-5 text-blue-700 font-bold text-xl'>My Information</p>
+                    <img src={logo} alt="logo" className="w-16 rounded-full ml-7 " />
+                    <p className='mt-4 text-blue-700 font-bold text-xl'>My Information</p>
                 </div>
                 <ul className={`bg-[#ffffff14] backdrop-blur-md  md:pl-10 pr-28 md:static fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${!open ? 'right-[-100%] ' : 'right-0'}`}>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 // import bannerImg from '../img/71619-coding.gif'
-import bannerImg2 from '../img/output-onlinegiftools (1).gif'
+import bannerImg2 from '../img/Rahad-unscreen.gif'
 import { Typewriter } from 'react-simple-typewriter'
 import AbaoutMe from './AbaoutMe';
 
@@ -63,7 +63,7 @@ const Home = () => {
 
                 </div>
                 <div>
-                    <img className='5/6' src={bannerImg2} />
+                    <img className='lg:ml-16 w-96' src={bannerImg2} />
                 </div>
             </div>
             <div>
