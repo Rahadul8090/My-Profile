@@ -1,6 +1,6 @@
 import React from 'react';
 // import bannerImg from '../img/71619-coding.gif'
-import bannerImg2 from '../img/Rahad-unscreen.gif'
+import bannerImg2 from '../img/Blue Modern Fire Logo Vector Template.gif'
 import { Typewriter } from 'react-simple-typewriter'
 import AbaoutMe from './AbaoutMe';
 
@@ -20,7 +20,7 @@ const Home = () => {
     return (
         <div className='w-5/6 m-auto md:w-5/6 '>
             <div className='lg:grid grid-cols-2'>
-                <div className='text-center w-full h-full mt-32'>
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className='text-center w-full h-full mt-32'>
                     <h1 className='text-3xl font-bold'>
                         Hello ! I'M {' '}
                         <span className=' text-blue-700'>
@@ -62,7 +62,10 @@ const Home = () => {
                     </div>
 
                 </div>
-                <div>
+                <div data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500">
                     <img className='lg:ml-16 w-96' src={bannerImg2} />
                 </div>
             </div>

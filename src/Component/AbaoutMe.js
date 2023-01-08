@@ -6,7 +6,7 @@ import MyProjects from './MyProjects';
 const AbaoutMe = () => {
     return (
         <div>
-            <div className="p-6 sm:p-12 dark:bg-gray-900 dark:text-gray-100">
+            <div data-aos="zoom-out-down" className="p-6 sm:p-12 dark:bg-gray-900 dark:text-gray-100">
                 <p className='text-center text-2xl bg-white text-black'>About Me</p>
                 <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
                     <img src={subgectImg} alt="" className="self-center flex-shrink-0 w-24 h-24 border rounded-full md:justify-self-start dark:bg-gray-500 dark:border-gray-700" />

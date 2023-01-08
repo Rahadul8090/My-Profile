@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FcMenu, FcNext } from "react-icons/fc";
 import logo from '../img/Rahad.gif'
+import AOS from 'aos';
+import 'aos/dist/aos.css';  
+
+
+
+AOS.init();
 
 
 const Nav = () => {
@@ -20,11 +26,11 @@ const Nav = () => {
                     }
 
                 </button>
-                <div className='flex'>
+                <div data-aos="fade-down-right" className='flex'>
                     <img src={logo} alt="logo" className="w-16 rounded-full ml-7 " />
                     <p className='mt-4 text-blue-700 font-bold text-xl'>My Information</p>
                 </div>
-                <ul className={`bg-[#ffffff14] backdrop-blur-md  md:pl-10 pr-28 md:static fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${!open ? 'right-[-100%] ' : 'right-0'}`}>
+                <ul className={`bg-gray-600 backdrop-blur-md  md:pl-10 pr-28 md:static fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${!open ? 'right-[-100%] ' : 'right-0'}`}>
 
                     <li className="md:inline-block  md:ml-10 ml-5 md:my-0 my-6 border-b-2 border-transparent hover:border-white duration-300">
                         <Link to='/home' className="text-white cursor-pointer font-Barlow font-normal text-sm inline-block md:py-5 py-3">
