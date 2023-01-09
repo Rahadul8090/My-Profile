@@ -3,6 +3,8 @@ import React from 'react';
 import bannerImg2 from '../img/Blue Modern Fire Logo Vector Template.gif'
 import { Typewriter } from 'react-simple-typewriter'
 import AbaoutMe from './AbaoutMe';
+import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { RiWhatsappFill } from "react-icons/ri";
 
 
 const Home = () => {
@@ -20,9 +22,10 @@ const Home = () => {
     return (
         <div className='w-5/6 m-auto md:w-5/6 '>
             <div className='lg:grid grid-cols-2'>
-                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className='text-center w-full h-full mt-32'>
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className='text-center w-full h-96 mt-32'>
                     <h1 className='text-3xl font-bold'>
-                        Hello ! I'M {' '}
+                        Hello ! My Name Is
+                        {' '}
                         <span className=' text-blue-700'>
                             {/* Style will be inherited from the parent element */}
                             <Typewriter
@@ -40,11 +43,11 @@ const Home = () => {
                     </h1>
                     <div className="divider">and</div>
                     <h1 className='text-4xl font-bold'>
-                        I'M{' '}
+                        I can{' '}
                         <span className='text-green-700'>
                             {/* Style will be inherited from the parent element */}
                             <Typewriter
-                                words={['Font end Devolepar', 'MEAN Stack', 'React Decoletar ']}
+                                words={['Font end Devolepment', 'React Devolepment', 'Microsoft Word', 'Microsoft Excel', 'Powerpoint']}
                                 loop={100}
                                 cursor
                                 cursorStyle='|'
@@ -65,8 +68,19 @@ const Home = () => {
                 <div data-aos="fade-left"
                     data-aos-anchor="#example-anchor"
                     data-aos-offset="500"
-                    data-aos-duration="500">
-                    <img className='lg:ml-16 w-96' src={bannerImg2} />
+                    data-aos-duration="500" className="mockup-phone border-primary">
+                    <div className="camera"></div>
+                    <div className="display">
+                        <div className="artboard artboard-demo phone-1">
+                            <img className=' w-96' src={bannerImg2} />
+                            <div className='flex justify-center '>
+                                <a href='#' className='m-1'> <FaFacebook className='w-9 h-9' /> </a>
+                                <a href='#' className='m-1'> <FaTwitter className='w-9 h-9' /> </a>
+                                <a href='#' className='m-1'> <RiWhatsappFill className='w-9 h-9' /> </a>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div>
